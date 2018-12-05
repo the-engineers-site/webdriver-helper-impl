@@ -13,7 +13,7 @@
         <dependency>
             <groupId>com.github.yjagdale.webdriverutil</groupId>
             <artifactId>webdriver-helper-utils</artifactId>
-            <version>1.2.3</version>
+            <version>1.2.2</version>
         </dependency>
     </dependencies>
 

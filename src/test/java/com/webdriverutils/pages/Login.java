@@ -1,7 +1,7 @@
 package com.webdriverutils.pages;
 
-import com.automation.finders.ElementFinder;
-import com.webdriverutils.runcontext.RunContext;
+
+import com.automation.executionhelper.IdentifierCollection;
 import org.openqa.selenium.By;
 
 public class Login {
@@ -13,9 +13,9 @@ public class Login {
     private String errorMessage = "Error Message";
 
     public Login() {
-        RunContext.ElementCollection.put(userName, By.id("txtUsername"));
-        RunContext.ElementCollection.put(password, By.id("txtPassword"));
-        RunContext.ElementCollection.put(login, By.id("btnLogin"));
-        RunContext.ElementCollection.put(errorMessage, By.id("spanMessage"));
+        IdentifierCollection.identifierCollection.put(userName, By.id("txtUsername"));
+        IdentifierCollection.identifierCollection.put(password, By.id("txtPassword"));
+        IdentifierCollection.identifierCollection.put(login, By.id("btnLogin"));
+        IdentifierCollection.identifierCollection.put(errorMessage, By.id("spanMessage"));
     }
 }
