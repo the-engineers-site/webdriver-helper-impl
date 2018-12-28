@@ -13,9 +13,9 @@ public class Login {
     private String errorMessage = "Error Message";
 
     public Login() {
-        IdentifierCollection.identifierCollection.put(userName, By.id("txtUsername"));
-        IdentifierCollection.identifierCollection.put(password, By.id("txtPassword"));
-        IdentifierCollection.identifierCollection.put(login, By.id("btnLogin"));
-        IdentifierCollection.identifierCollection.put(errorMessage, By.id("spanMessage"));
+        IdentifierCollection.put(userName, By.id("txtUsername"));
+        IdentifierCollection.put(password, By.id("txtPassword"));
+        IdentifierCollection.put(login, By.id("btnLogin"));
+        IdentifierCollection.put(errorMessage, By.id("spanMessage"));
     }
 }
