@@ -3,6 +3,7 @@
     <test name="Regression1">
         <classes>
             <class name="com.webdriverutils.testcases.LoginTestCases"/>
+            <class name="com.webdriverutils.testcases.HomePageTest"/>
         </classes>
     </test>
 </suite>

@@ -1,28 +1,14 @@
 package com.webdriverutils.testcases;
 
-import com.automation.browser.Browser;
-import com.automation.uiactionshelper.ElementActions;
-import com.webdriverutils.pages.Login;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class LoginTestCases extends ElementActions {
+import static com.automation.uiactionshelper.ElementActions.getText;
+import static com.automation.uiactionshelper.KeyBoardActions.clear;
+import static com.automation.uiactionshelper.KeyBoardActions.type;
+import static com.automation.uiactionshelper.MouseActions.click;
 
-    Login login;
-
-    @AfterSuite
-    public void endTest() {
-        Browser.getInstance().quit();
-    }
-
-    @BeforeClass
-    public void beforeClass() {
-        System.setProperty("WEBDRIVER_HELPER_CONFIG", "automation-config.properties");
-        login = new Login();
-    }
-
+public class LoginTestCases extends BaseTest {
 
     @Test
     public void validationMessagePassword() {
